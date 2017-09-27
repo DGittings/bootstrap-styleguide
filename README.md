@@ -1,5 +1,8 @@
 Introduction
 -----
+
+[View Demo](https://dgittings.github.io/bootstrap-styleguide)
+
 This project provides a one page showcase of all the components provided by Bootstrap 4 (beta) with any custom styles applied. This allows easy viewing of the effects of customisations, as well as providing a living styleguide.
 
 Gulp has been used as the build tool for this project. Upon building, Gulp will create two directories:
