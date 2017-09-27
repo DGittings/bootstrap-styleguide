@@ -1,0 +1,863 @@
+<h2 class="display-4" id="component-forms"><a href="http://getbootstrap.com/docs/4.0/components/forms/">Forms</a></h2>
+<div class="bd-example">
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-check">
+      <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+          Check me out
+        </label>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Example select</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Example multiple select</label>
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<h3>File input</h3>
+<div class="bd-example">
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlFile1">Example file input</label>
+      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
+  </form>
+</div>
+
+<h3>Sizing</h3>
+<div class="bd-example" data-example-id="">
+  <input class="form-control form-control-lg" placeholder=".form-control-lg" type="text">
+  <input class="form-control" placeholder="Default input" type="text">
+  <input class="form-control form-control-sm" placeholder=".form-control-sm" type="text">
+</div>
+<div class="bd-example">
+  <select class="form-control form-control-lg">
+  <option>Large select</option>
+</select>
+  <select class="form-control">
+  <option>Default select</option>
+</select>
+  <select class="form-control form-control-sm">
+  <option>Small select</option>
+</select>
+</div>
+
+<h3>Readonly</h3>
+<div class="bd-example" data-example-id="">
+  <input class="form-control" placeholder="Readonly input here…" readonly="" type="text">
+</div>
+
+<h3>Readonly plain text</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input readonly="" class="form-control-plaintext" id="staticEmail" value="email@example.com" type="text">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+      </div>
+    </div>
+  </form>
+</div>
+<div class="bd-example" data-example-id="">
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="staticEmail2" class="sr-only">Email</label>
+      <input readonly="" class="form-control-plaintext" id="staticEmail2" value="email@example.com" type="text">
+    </div>
+    <div class="form-group mx-sm-3">
+      <label for="inputPassword2" class="sr-only">Password</label>
+      <input class="form-control" id="inputPassword2" placeholder="Password" type="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Confirm identity</button>
+  </form>
+</div>
+
+<h3>Checkboxes and radios</h3>
+<div class="bd-example" data-example-id="">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" value="" type="checkbox">
+      Option one is this and that—be sure to include why it's great
+    </label>
+  </div>
+  <div class="form-check disabled">
+    <label class="form-check-label">
+      <input class="form-check-input" value="" disabled="" type="checkbox">
+      Option two is disabled
+    </label>
+  </div>
+</div>
+<div class="bd-example" data-example-id="">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" name="exampleRadios" id="exampleRadios1" value="option1" checked="" type="radio">
+      Option one is this and that—be sure to include why it's great
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" name="exampleRadios" id="exampleRadios2" value="option2" type="radio">
+      Option two can be something else and selecting it will deselect option one
+    </label>
+  </div>
+  <div class="form-check disabled">
+    <label class="form-check-label">
+      <input class="form-check-input" name="exampleRadios" id="exampleRadios3" value="option3" disabled="" type="radio">
+      Option three is disabled
+    </label>
+  </div>
+</div>
+
+<h3>Inline</h3>
+<div class="bd-example" data-example-id="">
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" id="inlineCheckbox1" value="option1" type="checkbox"> 1
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" id="inlineCheckbox2" value="option2" type="checkbox"> 2
+    </label>
+  </div>
+  <div class="form-check form-check-inline disabled">
+    <label class="form-check-label">
+      <input class="form-check-input" id="inlineCheckbox3" value="option3" disabled="" type="checkbox"> 3
+    </label>
+  </div>
+</div>
+<div class="bd-example" data-example-id="">
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" name="inlineRadioOptions" id="inlineRadio1" value="option1" type="radio"> 1
+    </label>
+  </div>
+  <div class="form-check form-check-inline">
+    <label class="form-check-label">
+      <input class="form-check-input" name="inlineRadioOptions" id="inlineRadio2" value="option2" type="radio"> 2
+    </label>
+  </div>
+  <div class="form-check form-check-inline disabled">
+    <label class="form-check-label">
+      <input class="form-check-input" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled="" type="radio"> 3
+    </label>
+  </div>
+</div>
+
+<h3>Without labels</h3>
+<div class="bd-example" data-example-id="">
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" id="blankCheckbox" value="option1" aria-label="..." type="checkbox">
+    </label>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" name="blankRadio" id="blankRadio1" value="option1" aria-label="..." type="radio">
+    </label>
+  </div>
+</div>
+
+<h3>Layout</h3>
+<h3>Form groups</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-group">
+      <label class="form-control-label" for="formGroupExampleInput">Example label</label>
+      <input class="form-control" id="formGroupExampleInput" placeholder="Example input" type="text">
+    </div>
+    <div class="form-group">
+      <label class="form-control-label" for="formGroupExampleInput2">Another label</label>
+      <input class="form-control" id="formGroupExampleInput2" placeholder="Another input" type="text">
+    </div>
+  </form>
+</div>
+
+<h3>Form grid</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="row">
+      <div class="col">
+        <input class="form-control" placeholder="First name" type="text">
+      </div>
+      <div class="col">
+        <input class="form-control" placeholder="Last name" type="text">
+      </div>
+    </div>
+  </form>
+</div>
+<h3>Form row</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-row">
+      <div class="col">
+        <input class="form-control" placeholder="First name" type="text">
+      </div>
+      <div class="col">
+        <input class="form-control" placeholder="Last name" type="text">
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Complex layout</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4" class="col-form-label">Email</label>
+        <input class="form-control" id="inputEmail4" placeholder="Email" type="email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4" class="col-form-label">Password</label>
+        <input class="form-control" id="inputPassword4" placeholder="Password" type="password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress" class="col-form-label">Address</label>
+      <input class="form-control" id="inputAddress" placeholder="1234 Main St" type="text">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2" class="col-form-label">Address 2</label>
+      <input class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" type="text">
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity" class="col-form-label">City</label>
+        <input class="form-control" id="inputCity" type="text">
+      </div>
+      <div class="form-group col-md-4">
+        <label for="inputState" class="col-form-label">State</label>
+        <select id="inputState" class="form-control">Choose</select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip" class="col-form-label">Zip</label>
+        <input class="form-control" id="inputZip" type="text">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox"> Check me out
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </form>
+</div>
+
+<h3>Horizontal form</h3>
+<div class="bd-example" data-example-id="">
+  <div class="container">
+    <form>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input class="form-control" id="inputEmail3" placeholder="Email" type="email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input class="form-control" id="inputPassword3" placeholder="Password" type="password">
+        </div>
+      </div>
+      <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-legend col-sm-2">Radios</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" name="gridRadios" id="gridRadios1" value="option1" checked="" type="radio">
+                Option one is this and that—be sure to include why it's great
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" name="gridRadios" id="gridRadios2" value="option2" type="radio">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+            <div class="form-check disabled">
+              <label class="form-check-label">
+                <input class="form-check-input" name="gridRadios" id="gridRadios3" value="option3" disabled="" type="radio">
+                Option three is disabled
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+      <div class="form-group row">
+        <div class="col-sm-2">Checkbox</div>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox"> Check me out
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<h3>Column sizing</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-row">
+      <div class="col-7">
+        <input class="form-control" placeholder="City" type="text">
+      </div>
+      <div class="col">
+        <input class="form-control" placeholder="State" type="text">
+      </div>
+      <div class="col">
+        <input class="form-control" placeholder="Zip" type="text">
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Auto sizing</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-row align-items-center">
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInput">Name</label>
+        <input class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Jane Doe" type="text">
+      </div>
+      <div class="col-auto">
+        <label class="sr-only" for="inlineFormInputGroup">Username</label>
+        <div class="input-group mb-2 mb-sm-0">
+          <div class="input-group-addon">@</div>
+          <input class="form-control" id="inlineFormInputGroup" placeholder="Username" type="text">
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="form-check mb-2 mb-sm-0">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-row align-items-center">
+      <div class="col-sm-3">
+        <label class="sr-only" for="inlineFormInputName">Name</label>
+        <input class="form-control mb-2 mb-sm-0" id="inlineFormInputName" placeholder="Jane Doe" type="text">
+      </div>
+      <div class="col-sm-3">
+        <label class="sr-only" for="inlineFormInputGroupUsername">Username</label>
+        <div class="input-group mb-2 mb-sm-0">
+          <div class="input-group-addon">@</div>
+          <input class="form-control" id="inlineFormInputGroupUsername" placeholder="Username" type="text">
+        </div>
+      </div>
+      <div class="col-auto">
+        <div class="form-check mb-2 mb-sm-0">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Custom form controls</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="form-row align-items-center">
+      <div class="col-auto">
+        <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+          <option selected="">Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <div class="col-auto">
+        <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+          <input class="custom-control-input" type="checkbox">
+          <span class="custom-control-indicator"></span>
+          <span class="custom-control-description">Remember my preference</span>
+        </label>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<h3>Inline forms</h3>
+<div class="bd-example" data-example-id="">
+  <form class="form-inline">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Jane Doe" type="text">
+
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+      <div class="input-group-addon">@</div>
+      <input class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username" type="text">
+    </div>
+
+    <div class="form-check mb-2 mr-sm-2 mb-sm-0">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+<div class="bd-example" data-example-id="">
+  <form class="form-inline">
+    <label class="mr-sm-2" for="inlineFormCustomSelectPref">Preference</label>
+    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelectPref">
+      <option selected="">Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+      <input class="custom-control-input" type="checkbox">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Remember my preference</span>
+    </label>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<h3>Help text</h3>
+<div class="bd-example" data-example-id="">
+  <label for="inputPassword5">Password</label>
+  <input id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" type="password">
+  <small id="passwordHelpBlock" class="form-text text-muted">
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+  </small>
+</div>
+<div class="bd-example" data-example-id="">
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="inputPassword6">Password</label>
+      <input id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" type="password">
+      <small id="passwordHelpInline" class="text-muted">
+        Must be 8-20 characters long.
+      </small>
+    </div>
+  </form>
+</div>
+
+<h3>Disabled forms</h3>
+<div class="bd-example" data-example-id="">
+  <form>
+    <fieldset disabled="">
+      <div class="form-group">
+        <label for="disabledTextInput">Disabled input</label>
+        <input id="disabledTextInput" class="form-control" placeholder="Disabled input" type="text">
+      </div>
+      <div class="form-group">
+        <label for="disabledSelect">Disabled select menu</label>
+        <select id="disabledSelect" class="form-control">
+          <option>Disabled select</option>
+        </select>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Can't check this
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+<h3>Validation</h3>
+<h4>Custom</h4>
+<div class="bd-example" data-example-id="">
+  <form class="container" id="needs-validation" novalidate="">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom01">First name</label>
+        <input class="form-control" id="validationCustom01" placeholder="First name" value="Mark" required="" type="text">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom02">Last name</label>
+        <input class="form-control" id="validationCustom02" placeholder="Last name" value="Otto" required="" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="validationCustom03">City</label>
+        <input class="form-control" id="validationCustom03" placeholder="City" required="" type="text">
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom04">State</label>
+        <input class="form-control" id="validationCustom04" placeholder="State" required="" type="text">
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Zip</label>
+        <input class="form-control" id="validationCustom05" placeholder="Zip" required="" type="text">
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+</div>
+
+<h4>Browser defaults</h4>
+<div class="bd-example" data-example-id="">
+  <form>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault01">First name</label>
+        <input class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required="" type="text">
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault02">Last name</label>
+        <input class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required="" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label for="validationDefault03">City</label>
+        <input class="form-control" id="validationDefault03" placeholder="City" required="" type="text">
+        <div class="invalid-feedback">
+          Please provide a valid city.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault04">State</label>
+        <input class="form-control" id="validationDefault04" placeholder="State" required="" type="text">
+        <div class="invalid-feedback">
+          Please provide a valid state.
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationDefault05">Zip</label>
+        <input class="form-control" id="validationDefault05" placeholder="Zip" required="" type="text">
+        <div class="invalid-feedback">
+          Please provide a valid zip.
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>
+</div>
+
+<h4>Supported elements</h4>
+<div class="bd-example" data-example-id="">
+  <form class="was-validated">
+    <label class="custom-control custom-checkbox">
+      <input class="custom-control-input" required="" type="checkbox">
+      <span class="custom-control-indicator"></span>
+      <span class="custom-control-description">Check this custom checkbox</span>
+    </label>
+
+    <div class="custom-controls-stacked d-block my-3">
+      <label class="custom-control custom-radio">
+        <input id="radioStacked1" name="radio-stacked" class="custom-control-input" required="" type="radio">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Toggle this custom radio</span>
+      </label>
+      <label class="custom-control custom-radio">
+        <input id="radioStacked2" name="radio-stacked" class="custom-control-input" required="" type="radio">
+        <span class="custom-control-indicator"></span>
+        <span class="custom-control-description">Or toggle this other custom radio</span>
+      </label>
+    </div>
+
+    <select class="custom-select d-block my-3" required="">
+      <option value="">Open this select menu</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+
+    <label class="custom-file">
+      <input id="file" class="custom-file-input" required="" type="file">
+      <span class="custom-file-control"></span>
+    </label>
+  </form>
+</div>
+
+<h3><a href="http://getbootstrap.com/docs/4.0/components/forms/#custom-forms">Custom forms</a></h3>
+<p>View the Bootstrap documentation for details on creating custom form elements.</p>
+
+<h2 id="component-input-group" class="display-4"><a href="http://getbootstrap.com/docs/4.0/components/input-group/">Input group</a></h2>
+<h3>Basic example</h3>
+<div class="bd-example" data-example-id="">
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">@</span>
+    <input class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" type="text">
+  </div>
+  <br>
+  <div class="input-group">
+    <input class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"
+      type="text">
+    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+  </div>
+  <br>
+  <label for="basic-url">Your vanity URL</label>
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+    <input class="form-control" id="basic-url" aria-describedby="basic-addon3" type="text">
+  </div>
+  <br>
+  <div class="input-group">
+    <span class="input-group-addon">$</span>
+    <input class="form-control" aria-label="Amount (to the nearest dollar)" type="text">
+    <span class="input-group-addon">.00</span>
+  </div>
+  <br>
+  <div class="input-group">
+    <span class="input-group-addon">$</span>
+    <span class="input-group-addon">0.00</span>
+    <input class="form-control" aria-label="Amount (to the nearest dollar)" type="text">
+  </div>
+</div>
+
+<h3>Sizing</h3>
+<div class="bd-example" data-example-id="">
+  <div class="input-group input-group-lg">
+    <span class="input-group-addon" id="sizing-addon1">@</span>
+    <input class="form-control" placeholder="Username" aria-label="Username" aria-describedby="sizing-addon1" type="text">
+  </div>
+  <br>
+  <div class="input-group">
+    <span class="input-group-addon" id="sizing-addon2">@</span>
+    <input class="form-control" placeholder="Username" aria-label="Username" aria-describedby="sizing-addon2" type="text">
+  </div>
+</div>
+
+<h3>Checkboxes and radio addons</h3>
+<div class="bd-example" data-example-id="">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <input aria-label="Checkbox for following text input" type="checkbox">
+        </span>
+        <input class="form-control" aria-label="Text input with checkbox" type="text">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <input aria-label="Radio button for following text input" type="radio">
+        </span>
+        <input class="form-control" aria-label="Text input with radio button" type="text">
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Multiple addons</h3>
+<div class="bd-example" data-example-id="">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-addon">
+          <input aria-label="Checkbox for following text input" type="checkbox">
+        </span>
+        <span class="input-group-addon">$</span>
+        <input class="form-control" aria-label="Text input with checkbox" type="text">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <span class="input-group-addon">0.00</span>
+        <input class="form-control" aria-label="Text input with radio button" type="text">
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Button addons</h3>
+<div class="bd-example" data-example-id="">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Go!</button>
+        </span>
+        <input class="form-control" placeholder="Search for..." aria-label="Search for..." type="text">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input class="form-control" placeholder="Search for..." aria-label="Search for..." type="text">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Go!</button>
+        </span>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-lg-offset-3 col-lg-6">
+      <div class="input-group">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Hate it</button>
+        </span>
+        <input class="form-control" placeholder="Product name" aria-label="Product name" type="text">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Love it</button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Buttons with dropdowns</h3>
+<div class="bd-example" data-example-id="">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <input class="form-control" aria-label="Text input with dropdown button" type="text">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input class="form-control" aria-label="Text input with dropdown button" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Segmented buttons</h3>
+<div class="bd-example" data-example-id="">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="input-group">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-secondary">Action</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <input class="form-control" aria-label="Text input with segmented button dropdown" type="text">
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="input-group">
+        <input class="form-control" aria-label="Text input with segmented button dropdown" type="text">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-secondary">Action</button>
+          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

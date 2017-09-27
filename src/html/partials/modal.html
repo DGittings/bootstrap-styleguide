@@ -1,0 +1,164 @@
+<h2 class="display-4" id="component-modal"><a href="http://getbootstrap.com/docs/4.0/components/modal/">Modal</a></h2>
+<h3>Live example</h3>
+<div class="bd-example">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Launch demo modal
+</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+        </div>
+        <div class="modal-body">
+          Aliquip in anim nostrud duis magna. Enim ut elit minim eu nisi. Do fugiat ullamco nostrud dolore irure quis non exercitation
+          elit pariatur culpa irure eiusmod. Velit mollit voluptate consectetur cillum tempor officia culpa mollit amet
+          irure irure ea aute qui. Eiusmod ex dolor officia mollit veniam. Anim amet sint non Lorem laboris consectetur
+          non fugiat sit consectetur adipisicing qui adipisicing.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Tooltips and popovers</h3>
+<div class="bd-example">
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalPopovers">
+  Launch demo modal
+</button>
+  <div id="exampleModalPopovers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalPopoversLabel"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalPopoversLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h5>Popover in a modal</h5>
+          <p>This <a href="#" role="button" class="btn btn-secondary popover-test" title="" data-content="Popover body content is set in this attribute."
+              data-container="#exampleModalPopovers" data-original-title="Popover title">button</a> triggers a popover
+            on click.
+          </p>
+          <hr>
+          <h5>Tooltips in a modal</h5>
+          <p><a href="#" class="tooltip-test" title="" data-container="#exampleModalPopovers" data-original-title="Tooltip">This link</a>                and <a href="#" class="tooltip-test" title="" data-container="#exampleModalPopovers" data-original-title="Tooltip">that link</a>                have tooltips on hover.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Grid</h3>
+<div class="bd-example">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#gridSystemModal">
+  Launch demo modal
+</button>
+  <div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="gridModalLabel">Grids in modals</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid bd-example-row">
+            <div class="row">
+              <div class="col-md-4">.col-md-4</div>
+              <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+              <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+            </div>
+            <div class="row">
+              <div class="col-sm-9">
+                Level 1: .col-sm-9
+                <div class="row">
+                  <div class="col-8 col-sm-6">
+                    Level 2: .col-8 .col-sm-6
+                  </div>
+                  <div class="col-4 col-sm-6">
+                    Level 2: .col-4 .col-sm-6
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3>Optional sizes</h3>
+<div class="bd-example">
+  <!-- Large modal -->
+  <button class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Nostrud anim nostrud dolore et est. Enim esse consequat aliquip fugiat in nulla velit dolore Lorem in enim culpa sunt mollit.
+          Non officia mollit minim esse reprehenderit adipisicing. Ut dolore anim culpa nostrud eiusmod exercitation
+          dolore exercitation.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" style="display: none;"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Reprehenderit pariatur ad ullamco et ipsum exercitation ex consequat magna ex.
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </div>
+</div>

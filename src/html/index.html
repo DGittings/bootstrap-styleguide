@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Styleguide - University of Surrey</title>
+
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Our custom bootstrap build -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Documentation styles -->
+  <link rel="stylesheet" href="docs.css">
+</head>
+
+<body>
+
+  <div class="container container-outer">
+    <div class="row">
+      <div id="component-nav" class="col-xs-12 col-sm-2 list-group">
+        <h4>Styleguide</h4>
+        <a class="list-group-item list-group-item-action" href="#component-media-object">Media object</a>
+        <a class="list-group-item list-group-item-action" href="#component-typography">Typography</a>
+        <a class="list-group-item list-group-item-action" href="#component-lists">Lists</a>
+        <a href="#component-code" class="list-group-item list-group-item-action">Code</a>
+        <a href="#component-images" class="list-group-item list-group-item-action">Images</a>
+        <a href="#component-tables" class="list-group-item list-group-item-action">Tables</a>
+        <a href="#component-figures" class="list-group-item list-group-item-action">Figures</a>
+        <a href="#component-alerts" class="list-group-item list-group-item-action">Alerts</a>
+        <a href="#component-badge" class="list-group-item list-group-item-action">Badge</a>
+        <a href="#component-breadcrumb" class="list-group-item list-group-item-action">Breadcrumb</a>
+        <a href="#component-buttons" class="list-group-item list-group-item-action">Buttons</a>
+        <a href="#component-button-group" class="list-group-item list-group-item-action">Button group</a>
+        <a href="#component-cards" class="list-group-item list-group-item-action">Cards</a>
+        <a href="#component-carousel" class="list-group-item list-group-item-action">Carousel</a>
+        <a href="#component-collapse" class="list-group-item list-group-item-action">Collapse</a>
+        <a href="#component-dropdowns" class="list-group-item list-group-item-action">Dropdowns</a>
+        <a href="#component-forms" class="list-group-item list-group-item-action">Forms</a>
+        <a href="#component-input-group" class="list-group-item list-group-item-action">Input group</a>
+        <a href="#component-jumbotron" class="list-group-item list-group-item-action">Jumbotron</a>
+        <a href="#component-list-group" class="list-group-item list-group-item-action">List group</a>
+        <a href="#component-modal" class="list-group-item list-group-item-action">Modal</a>
+        <a href="#component-navs" class="list-group-item list-group-item-action">Navs</a>
+        <a href="#component-navbar" class="list-group-item list-group-item-action">Navbar</a>
+        <a href="#component-pagination" class="list-group-item list-group-item-action">Pagination</a>
+        <a href="#component-popovers" class="list-group-item list-group-item-action">Popovers</a>
+        <a href="#component-progress" class="list-group-item list-group-item-action">Progress</a>
+        <a href="#component-scrollspy" class="list-group-item list-group-item-action">Scrollspy</a>
+        <a href="#component-tooltips" class="list-group-item list-group-item-action">Tooltips</a>
+      </div>
+
+      <main class="col-xs-12 col pl-sm-5 pr-sm-5" data-spy="scroll" data-target="#component-nav" data-offset="100">
+        <div class="inner">
+          <div class="jumbotron text-center mt-4">
+            <h1 class="display-4">University of Surrey styleguide</h1>
+            <p class="lead">The Bootstrap component library with custom styles applied as per the University of Surrey brand guidelines.</p>
+            <hr class="my-4">
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="https://github.com/university-of-surrey/surrey-style-guide" role="button">GitHub repo</a>
+              <a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" role="button">Bootstrap docs</a>
+            </p>
+          </div>
+
+          @@include('partials/media-object.html') 
+          @@include('partials/typography.html') 
+          @@include('partials/lists.html') 
+          @@include('partials/code.html')
+          @@include('partials/images.html') 
+          @@include('partials/tables.html') 
+          @@include('partials/figures.html') 
+          @@include('partials/alerts.html')
+          @@include('partials/badge.html') 
+          @@include('partials/breadcrumbs.html') 
+          @@include('partials/buttons.html') 
+          @@include('partials/button-group.html')
+          @@include('partials/cards.html') 
+          @@include('partials/carousel.html') 
+          @@include('partials/collapse.html') 
+          @@include('partials/dropdowns.html')
+          @@include('partials/forms.html') 
+          @@include('partials/jumbotron.html') 
+          @@include('partials/list-group.html') 
+          @@include('partials/modal.html')
+          @@include('partials/navs.html') 
+          @@include('partials/navbar.html') 
+          @@include('partials/pagination.html') 
+          @@include('partials/popovers.html')
+          @@include('partials/scrollspy.html') 
+          @@include('partials/tooltip.html')
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap required js -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+
+  <!-- Initialise popovers and tooltips -->
+  <script>
+    jQuery(document).ready(function () {
+      jQuery('[data-toggle="popover"]').popover();
+      jQuery('[data-toggle="tooltip"]').tooltip();
+      $('button.bd-toggle-animated-progress').click(function () {
+        $(this).prev().children('.progress-bar').toggleClass('progress-bar-animated');
+      });
+    });
+  </script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      "use strict";
+      window.addEventListener("load", function () {
+        var form = document.getElementById("needs-validation");
+        form.addEventListener("submit", function (event) {
+          if (form.checkValidity() == false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add("was-validated");
+        }, false);
+      }, false);
+    }());
+  </script>
+</body>
+
+</html>
